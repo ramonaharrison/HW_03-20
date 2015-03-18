@@ -23,7 +23,7 @@ public class Fibonacci {
         // times finding the 40th fibonacci number recursively
 
         long startTime2 = System.nanoTime();
-        System.out.println("recursiveFib(40): " + recursiveFib(40));
+            System.out.println("recursiveFib(40): " + recursiveFib(40));
         long endTime2 = System.nanoTime();
 
         long duration2 = (endTime2 - startTime2);
@@ -53,7 +53,7 @@ public class Fibonacci {
 
     public static int recursiveFib(int n) {
 
-        // recursive approach: for each value n, returns the sum of the two previous fibonacci numbers, until the first two fibonacci numbers are reached
+        // recursive approach: for each value n, returns the sum of the two previous fibonacci values, until the first two fibonacci values are reached
 
         if (n == 1) {
             return (0);
@@ -63,7 +63,6 @@ public class Fibonacci {
             return (recursiveFib(n - 1) + recursiveFib(n - 2));
         }
     }
-
 }
 
 
