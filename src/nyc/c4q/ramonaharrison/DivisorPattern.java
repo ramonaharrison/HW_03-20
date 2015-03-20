@@ -10,22 +10,22 @@ package nyc.c4q.ramonaharrison;
 public class DivisorPattern {
     public static void main(String[] args) {
 
-        table(5);
+        box(10);
     }
 
-    public static void table(int n) {
+    public static void box(int n) {
 
         for (int i = 1; i <= n; i++) {
-            String table = "";
+            String box = "";
 
             for (int j = 1; j <= n; j++) {
                 if (i % j == 0 || j % i == 0)
-                    table = table + "@ ";
+                    box = box + "@ ";
                 else
-                    table = table + "  ";
+                    box = box + "  ";
             }
 
-            System.out.println(table);
+            System.out.println(box);
         }
     }
 }
